@@ -1,4 +1,5 @@
 @import "./block.css";
+@import "./text.css";
 
 .page-1__text {
   grid-row: 2 / 3;

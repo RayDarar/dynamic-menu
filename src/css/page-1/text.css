@@ -1,0 +1,15 @@
+.page-1__text {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.page-1__text > h2 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.page-1__text > p {
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
