@@ -7,7 +7,27 @@
   border: none;
 }
 
+::root {
+  font-size: 100%;
+}
+
 #app {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
+}
+
+.content {
+  height: 100%;
+}
+
+.content__page {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+.page-1__text {
+  grid-row: 2 / 3;
 }
