@@ -1,0 +1,8 @@
+.page-2__text {
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
