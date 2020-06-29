@@ -1,5 +1,6 @@
 @import "./page-1/index.css";
 @import "./burger.css";
+@import "./header.css";
 
 * {
   margin: 0;

@@ -12,10 +12,17 @@ const pages = {
 };
 const burger = document.querySelector("." + Classes.BURGER);
 
-burger.onclick = () => {
+function toggleWrap() {
   // toggling burger state
   burger.classList.toggle(Classes.BURGER_ACTIVE);
 
   // toggling current page state
   pages.current.classList.toggle(Classes.PAGE_WRAPPED);
-};
+
+  // if wrapped, add listener to unwrap him
+  if (pages.current.classList.contains(Classes.PAGE_WRAPPED)) {
+    pages.current.addEventListener("click", toggleWrap);
+  } else pages.current.removeEventListener("click", toggleWrap);
+}
+
+burger.onclick = toggleWrap;
