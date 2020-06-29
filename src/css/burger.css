@@ -1,0 +1,33 @@
+.burger {
+  position: fixed;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+}
+
+.burger > div {
+  margin-top: 0.3em;
+  width: 32px;
+  height: 5px;
+  background-color: black;
+  border-radius: 15px;
+  transition: 0.3s all;
+}
+
+.burger_active > div:nth-child(1),
+.burger_active > div:nth-child(3) {
+  position: absolute;
+  top: 10px;
+}
+
+.burger_active > div:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.burger_active > div:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.burger_active > div:nth-child(2) {
+  opacity: 0;
+}

@@ -1,3 +1,6 @@
+@import "./page-1/index.css";
+@import "./burger.css";
+
 * {
   margin: 0;
   padding: 0;
