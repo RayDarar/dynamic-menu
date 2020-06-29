@@ -3,9 +3,28 @@
   opacity: 0;
   transform: translateY(-100%);
   transition: all 0.3s ease;
+  width: 100vw;
 }
 
 .header_active {
   opacity: 1;
   transform: translateY(0%);
+}
+
+.header > nav {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.header > nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  font-size: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
 }
